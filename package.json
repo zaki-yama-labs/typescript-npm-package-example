@@ -1,5 +1,5 @@
 {
-  "name": "typescript-npm-package-template",
+  "name": "@zaki-yama/my-typescript-package",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zaki-yama/typescript-npm-package-template.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [],
   "author": "",
