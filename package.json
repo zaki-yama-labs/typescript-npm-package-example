@@ -1,13 +1,15 @@
 {
   "name": "@zaki-yama/my-typescript-package",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
+  "types": "lib/index.d.js",
   "scripts": {
-    "build": "npm run build:cjs && npm run build:esm",
+    "build": "npm run build:cjs && npm run build:esm && npm run build:umd",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
+    "build:umd": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +21,8 @@
   },
   "files": [
     "lib",
-    "esm"
+    "esm",
+    "dist"
   ],
   "keywords": [],
   "author": "",
@@ -36,7 +39,10 @@
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "prettier": "^1.18.2",
-    "typescript": "^3.6.2"
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
   },
   "dependencies": {
     "pluralize": "^8.0.0"
