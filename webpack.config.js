@@ -4,7 +4,7 @@ module.exports = {
   mode: "production",
   entry: "./src/index.ts",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "umd"),
     filename: "my-typescript-package.js",
     library: "myTsPackage",
     libraryTarget: "umd"

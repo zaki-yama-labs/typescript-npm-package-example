@@ -22,7 +22,7 @@
   "files": [
     "lib",
     "esm",
-    "dist"
+    "umd"
   ],
   "keywords": [],
   "author": "",

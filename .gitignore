@@ -1,6 +1,6 @@
 lib
 esm
-dist
+umd
 
 # Logs
 logs
